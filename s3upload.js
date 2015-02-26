@@ -103,7 +103,7 @@ S3Upload.prototype.uploadToS3 = function(file, signResult) {
         }.bind(this);
     }
     xhr.setRequestHeader('Content-Type', file.type);
-    xhr.setRequestHeader('x-amz-acl', 'public-read');
+    
     return xhr.send(file);
 };
 
